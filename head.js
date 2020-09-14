@@ -6,12 +6,13 @@ const assertEqual = function(actual, expected) {
     console.log(`❌Assertion failed: ${actual} === ${expected}`);
   }
 };
-//TEST CODE
+
 
 const head = function (array) {
   return array[0];
 };
 
+//testcode
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head([]), undefined);
