@@ -1,0 +1,45 @@
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`❌❌❌Assertion failed: ${actual} === ${expected}`);
+  }
+};
+
+
+
+//takes in 2 objects // compares // -> returns true or false
+
+const eqObjects = function(object1, object2) {
+  const keys1 = Object.keys(object1)
+  const keys2 = Object.keys(object2)
+
+  if (keys1.length === keys2.length) {
+    for (const e of keys1) {
+      if (object1[e] !== object2[e]) {
+        return false;
+      }
+    } return true;
+  } return false;
+};
+
+
+
+
+
+
+const ab = {a: "1", b: "2", };
+const ba = {b: "2", a: "1"};
+// eqObjects(ab, ba); // => true
+
+const abc = {a: "1", b: "2", c: "3"};
+// eqObjects(ab, abc); // => false
+
+const cba = {c: "3", b: "2", a: "1"};
+const cbaWrong = {c: "2", b: "2", a: "1"};
+
+
+assertEqual(eqObjects(ab, ba), true);
+assertEqual(eqObjects(ab, abc), false);
+assertEqual(eqObjects(cba, abc), true);
+assertEqual(eqObjects(cbaWrong, abc), false);
