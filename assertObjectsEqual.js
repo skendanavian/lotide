@@ -1,14 +1,3 @@
-
-
-
-const assertArraysEqual = function(inputArray1, inputArray2) {
-  if (eqArrays(inputArray1, inputArray2)) {
-    console.log("✅ ✅ ✅ Assertion Passed: The arrays are identical.");
-  } else {
-    console.log("❌❌❌ Assertion failed: The arrays are not identical.");
-  }
-};
-
 const eqArrays = function(array1, array2) {
 
   //toggle to track if the array lengths and/or items are equal
@@ -56,7 +45,7 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`❌❌❌ Assertion failed: ${inspect(actual)} === ${inspect(expected)}`);
   }
 
-}
+};
 
 
 const ab = {a: "1", b: "2", };
