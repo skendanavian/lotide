@@ -10,6 +10,7 @@ const takeUntil = function(array, callback) {
       newArray.push(item);
     }
   }
+  return newArray;
 };
 
 module.exports = takeUntil;

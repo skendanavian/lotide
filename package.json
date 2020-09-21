@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@s-nissen/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a small library of reusable functions inspired bt the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/skendanavian/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Soren Nissen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/skendanavian/lotide/issues"

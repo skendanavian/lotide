@@ -19,13 +19,15 @@ module.exports = findKeyByValue;
 
 //TEST FUNCTIONS
 
-const bestTVShowsByGenre = {
-  "sci_fi": "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire"
-};
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //True
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); // True
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy"); // True
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), "comedy");// False
+//Test Cases
+// const bestTVShowsByGenre = {
+//   "sci_fi": "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama: "The Wire"
+// };
+
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //True
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); // True
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy"); // True
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), "comedy");// False

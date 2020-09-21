@@ -2,7 +2,7 @@ const assertEqual = require('./assertEqual')
 
 
 //Given array and an object
-//return an object containing counts of everythin that input object listed
+//return an object containing counts of everything that input object listed
 // function needs to return an object that can represent the stats
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
@@ -23,8 +23,12 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
+module.exports = countOnly;
 
 
+
+// Test Cases
+//
 // const firstNames = [
 //   "Karl",
 //   "Salima",
@@ -45,4 +49,3 @@ const countOnly = function(allItems, itemsToCount) {
 // assertEqual(result1["Agouhanna"], undefined);
 
 
-module.exports = countOnly;
