@@ -40,11 +40,8 @@ const middle = function(array) {
   return "Input is ot an Array";
 };
 
-assertArraysEqual(middle([1]), []); // expected: true
-assertArraysEqual(middle([1, 2, 3]), [2]); // expected: true
-assertArraysEqual(middle([1, 4, 3, 1]), [4, 3]); // expected: true
-assertArraysEqual(middle([1, 4, 3, 1]), [4, 3]); // expected: true
-assertArraysEqual(middle([1, 4, 3, 1]), [2, 3]); // expected: false
-assertArraysEqual(middle({}), []); // expected: false
+module.exports = middle;
+
+
 
 
