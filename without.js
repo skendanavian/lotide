@@ -1,25 +1,5 @@
-const eqArrays = function(array1, array2) {
-  let arrayCheck = true;
-
-  if (array1.length !== array2.length) {
-    arrayCheck = false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        arrayCheck = false;
-      }
-    }
-  }
-  return arrayCheck;
-};
-
-const assertArraysEqual = function(inputArray1, inputArray2) {
-  if (eqArrays(inputArray1, inputArray2)) {
-    console.log("✅ ✅ ✅ Assertion Passed: The arrays are identical.");
-  } else {
-    console.log("❌❌❌ Assertion failed: The arrays are not identical.");
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 //STEPS
 //take in source array and an itemsToRemove array -->  ex. ([1,2,3], [1]) => [2,3]
@@ -40,14 +20,16 @@ const without = function(source, itemsToRemove) {
 
 module.exports = without;
 
-without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+//Test Cases
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
+// without([1, 2, 3], [1]); // => [2, 3]
+// without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
 
-const nums = [5, 4, 5, 3];
-without(nums, ["5"]);
-assertArraysEqual(nums, [5, 4, 5, 3]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+// const nums = [5, 4, 5, 3];
+// without(nums, ["5"]);
+// assertArraysEqual(nums, [5, 4, 5, 3]);

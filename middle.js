@@ -1,25 +1,5 @@
-const eqArrays = function(array1, array2) {
-  let arrayCheck = true;
-
-  if (array1.length !== array2.length) {
-    arrayCheck = false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        arrayCheck = false;
-      }
-    }
-  }
-  return arrayCheck;
-};
-
-const assertArraysEqual = function(inputArray1, inputArray2) {
-  if (eqArrays(inputArray1, inputArray2)) {
-    console.log("✅ ✅ ✅ Assertion Passed: The arrays are identical.");
-  } else {
-    console.log("❌❌❌ Assertion failed: The arrays are not identical.");
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(array) {
 
@@ -37,7 +17,7 @@ const middle = function(array) {
 
   }
   console.log("Input is not an array");
-  return "Input is ot an Array";
+  return "Input is not an Array";
 };
 
 module.exports = middle;
