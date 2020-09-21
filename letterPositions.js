@@ -40,6 +40,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 assertArraysEqual(letterPositions("hello, World").l, [2, 3, 10]); // true
 assertArraysEqual(letterPositions("hello,World").l, [1, 8, 10]); // false
 assertArraysEqual(letterPositions("hello").h, [0]); // true

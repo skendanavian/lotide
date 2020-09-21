@@ -1,6 +1,8 @@
 const assert = require("chai").assert;
 const tail = require("../tail.js")
 
+//Tests
+
 const test1 = ['I', 'am', 'a', 'lighthouse'];
 const test2 = [];
 const test3 = ['hello'];
@@ -26,9 +28,3 @@ describe("#tail", () => {
   });
 });
 
-
-
-
-// assertEqual(words.length, 2);
-// assertEqual(words[0], "Lighthouse");
-// assertEqual(words[1], "Labs");

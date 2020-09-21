@@ -10,6 +10,8 @@ const map = function(originalArray, callback) {
   return results;
 };
 
+module.exports = map;
+
 const eqArrays = function(array1, array2) {
   let arrayCheck = true;
 

@@ -61,3 +61,6 @@ assertObjectsEqual(cd, dc); //true
 assertObjectsEqual(ab, ba); //true
 assertObjectsEqual(ab, abc); //false
 assertObjectsEqual(cbaWrong, cba); //false
+
+module.exports = assertObjectsEqual;
+module.exports = eqObjects;

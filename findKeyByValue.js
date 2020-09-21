@@ -20,6 +20,8 @@ const findKeyByValue = function(listOfShows, show) {
   }
 };
 
+module.exports = findKeyByValue;
+
 
 //TEST FUNCTIONS
 

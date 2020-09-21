@@ -34,10 +34,12 @@ const flatten = function(inputArray) {
   return joinArray;
 };
 
+module.exports = flatten;
+
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => true
 assertArraysEqual(flatten([1, 3, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => false
-assertArraysEqual(flatten([1, 2, [3, 4], 5,["cars"], [6],9]), [1, 2, 3, 4, 5, 6]); // => false
+assertArraysEqual(flatten([1, 2, [3, 4], 5, ["cars"], [6], 9]), [1, 2, 3, 4, 5, 6]); // => false
 assertArraysEqual(flatten([1, 2, [3, 4], 5, "cars", [6]]), [1, 2, 3, 4, 5, "cars", 6]); // => true
 
 
