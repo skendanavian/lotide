@@ -2,7 +2,7 @@ const countOnly = require('../countOnly');
 const assert = require('chai').assert;
 
 
-//Test Array
+//Test Arrays
 const firstNames = [
   "Karl",
   "Salima",
@@ -26,7 +26,6 @@ const firstNames1 = [
   "Fang",
   "Karl"
 ];
-
 
 
 
