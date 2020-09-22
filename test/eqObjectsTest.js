@@ -1,7 +1,7 @@
 const eqObjects = require('../eqObjects');
 const assert = require('chai').assert;
 
-describe('#eqArrays', () => {
+describe('#eqObjects', () => {
 
   it('should return true when given {} and {}', () => {
     assert.isTrue(eqObjects({}, {}));
