@@ -23,8 +23,6 @@ describe('#letterPositions', () => {
 
   });
 
-
-
 });
 
 
