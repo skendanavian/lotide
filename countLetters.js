@@ -1,6 +1,3 @@
-const assertEqual = require('./assertEqual')
-
-
 //take in sentence as a string
 //return a count of each of the letters in the string
 
