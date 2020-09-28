@@ -19,8 +19,7 @@ const countLetters = function(sentence) {
 module.exports = countLetters;
 
 
-// to invoke function
-// countLetters("hello world");
+
 
 
 

@@ -1,4 +1,4 @@
-const eqObjects = require('../eqObjects');
+const {eqObjects} = require('../eqObjects');
 const assert = require('chai').assert;
 
 describe('#eqObjects', () => {
@@ -13,6 +13,18 @@ describe('#eqObjects', () => {
   it('should return false when given {name: "mike", age: "ten"} and {name: "mike", age: "ten"}', () => {
     assert.isTrue(eqObjects({name: "mike", age: "ten"}, {name: "mike", age: "ten"}));
   });
+
+  it('should return true when given equal objects with equal inner objects', () => {
+    assert.isTrue(eqObjects({a: {z: 1}, b: 2}, {a: {z: 1}, b: 2}))
+  });
+
+  it('should return false when given an object with embedded objects that are not equal', () => {
+    assert.isFalse(eqObjects({a: {y: 0, z: 1}, b: 2}, {a: 1, b: 2}))
+  });
+
+  it('should return false when given an object with an inner array and one without', () => {
+    assert.isFalse(eqObjects({a: 1, b: [5]}, {a: 1, b: {y: 5}}))
+  })
 
 });
 

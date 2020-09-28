@@ -1,6 +1,3 @@
-const eqArrays = require('./eqArrays');
-const assertArraysEqual = require('./assertArraysEqual');
-
 //STEPS
 //take in source array and an itemsToRemove array -->  ex. ([1,2,3], [1]) => [2,3]
 //return new array with only the elements from source that are not in itemsToRemove
@@ -20,16 +17,5 @@ const without = function(source, itemsToRemove) {
 
 module.exports = without;
 
-//Test Cases
 
-// without([1, 2, 3], [1]); // => [2, 3]
-// without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
-// const words = ["hello", "world", "lighthouse"];
-// without(words, ["lighthouse"]);
-
-// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-
-// const nums = [5, 4, 5, 3];
-// without(nums, ["5"]);
-// assertArraysEqual(nums, [5, 4, 5, 3]);
